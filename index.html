@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Live Poker HUD Privacy Policy and Terms of Use</title>
+    <title>Live Poker HUD Privacy Policy, Terms of Use, and Support</title>
     <meta
       name="description"
-      content="Privacy Policy and Terms of Use for Live Poker HUD."
+      content="Privacy Policy, Terms of Use, and Support for Live Poker HUD."
     />
     <style>
       :root {
@@ -160,7 +160,7 @@
     <main>
       <article>
         <h1>Live Poker HUD Legal</h1>
-        <p class="subtitle">Privacy Policy and Terms of Use for Live Poker HUD.</p>
+        <p class="subtitle">Privacy Policy, Terms of Use, and Support for Live Poker HUD.</p>
 
         <div class="tabs" role="tablist" aria-label="Legal documents">
           <button
@@ -182,6 +182,16 @@
             aria-controls="terms-panel"
           >
             Terms of Use
+          </button>
+          <button
+            id="support-tab"
+            class="tab-button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="support-panel"
+          >
+            Support
           </button>
         </div>
 
@@ -426,9 +436,57 @@
           </p>
         </section>
 
+        <section id="support-panel" class="tab-panel" role="tabpanel" aria-labelledby="support-tab">
+          <h2>Live Poker HUD Support</h2>
+          <p><strong>Effective date:</strong> 19.04.2026</p>
+
+          <h3>Contact</h3>
+          <p>
+            For support questions, account help, subscription issues, bug reports, or
+            feedback, contact:
+            <a href="mailto:drinkodoro@gmail.com">drinkodoro@gmail.com</a>
+          </p>
+
+          <h3>What to Include</h3>
+          <p>To help us investigate your request, please include:</p>
+          <ul>
+            <li>A short description of the issue or question.</li>
+            <li>Your device model and iOS version.</li>
+            <li>The Live Poker HUD app version, if available.</li>
+            <li>Screenshots or error messages, if relevant.</li>
+            <li>The email address associated with your account, if you use one.</li>
+          </ul>
+
+          <h3>Subscriptions and Billing</h3>
+          <p>
+            Live Poker HUD Pro subscriptions are purchased through Apple in-app
+            purchases. You can manage, cancel, or review your subscription in your
+            Apple ID subscription settings.
+          </p>
+          <p>
+            We do not process payment card details and cannot directly cancel or refund
+            Apple subscriptions. Refund requests are handled by Apple according to
+            Apple's policies.
+          </p>
+
+          <h3>Data and Backups</h3>
+          <p>
+            Poker data is stored locally on your device. If you are contacting support
+            about missing data, please mention whether the app was deleted, the device
+            was changed, or an import/export file was used.
+          </p>
+
+          <h3>Response Time</h3>
+          <p>
+            We aim to respond to support requests as soon as reasonably possible, but
+            response times may vary.
+          </p>
+        </section>
+
         <p class="notice">
           Direct links: use <code>#privacy</code> for the Privacy Policy tab and
-          <code>#terms</code> for the Terms of Use tab.
+          <code>#terms</code> for the Terms of Use tab, and
+          <code>#support</code> for the Support tab.
         </p>
       </article>
     </main>
@@ -444,6 +502,11 @@
           hash: "#terms",
           tab: document.getElementById("terms-tab"),
           panel: document.getElementById("terms-panel"),
+        },
+        {
+          hash: "#support",
+          tab: document.getElementById("support-tab"),
+          panel: document.getElementById("support-panel"),
         },
       ];
 
