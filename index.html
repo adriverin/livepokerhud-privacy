@@ -8,6 +8,8 @@
       name="description"
       content="Privacy Policy, Terms of Use, and Support for Live Poker HUD."
     />
+    <link rel="icon" href="assets/web-icon.png" />
+    <link rel="apple-touch-icon" href="assets/web-icon.png" />
     <style>
       :root {
         color-scheme: dark;
@@ -92,9 +94,75 @@
         color: var(--accent);
       }
 
+      .hero {
+        margin-bottom: 30px;
+      }
+
+      .brand-lockup {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .brand-copy {
+        min-width: 0;
+      }
+
+      .app-icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 22px;
+        box-shadow: 0 16px 44px rgba(0, 0, 0, 0.38);
+      }
+
       .subtitle {
         margin-top: 0;
         color: var(--muted);
+      }
+
+      .demo {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+        gap: 28px;
+        align-items: center;
+        margin: 10px 0 30px;
+        padding: 26px 0 32px;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .demo h2 {
+        margin: 0 0 12px;
+        color: var(--text);
+        font-size: clamp(1.45rem, 4vw, 2.25rem);
+      }
+
+      .demo p:last-child {
+        margin-bottom: 0;
+      }
+
+      .video-frame {
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        background: #060910;
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.4);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        max-height: 620px;
+        background: #060910;
       }
 
       .tabs {
@@ -153,14 +221,75 @@
         .tabs {
           flex-direction: column;
         }
+
+        .brand-lockup,
+        .demo {
+          display: block;
+        }
+
+        .brand-lockup {
+          text-align: center;
+        }
+
+        .app-icon {
+          display: block;
+          margin: 0 auto 16px;
+        }
+
+        .demo {
+          padding: 22px 0 26px;
+        }
+
+        .video-frame {
+          margin-top: 20px;
+          border-radius: 18px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
       <article>
-        <h1>Live Poker HUD Legal</h1>
-        <p class="subtitle">Privacy Policy, Terms of Use, and Support for Live Poker HUD.</p>
+        <header class="hero">
+          <div class="brand-lockup">
+            <img
+              class="app-icon"
+              src="assets/web-icon.png"
+              alt="Live Poker HUD app icon"
+              width="88"
+              height="88"
+            />
+            <div class="brand-copy">
+              <h1>Live Poker HUD</h1>
+              <p class="subtitle">Privacy Policy, Terms of Use, and Support.</p>
+            </div>
+          </div>
+        </header>
+
+        <section class="demo" aria-labelledby="demo-title">
+          <div>
+            <p class="eyebrow">Hand logging workflow</p>
+            <h2 id="demo-title">Track live poker hands with a focused table flow.</h2>
+            <p>
+              Live Poker HUD keeps player notes, sessions, and hand history local to
+              your device while giving you a fast workflow for review after play.
+            </p>
+          </div>
+          <div class="video-frame">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="fixtures/app-store-screenshots/livepokerhud_table.png"
+            >
+              <source
+                src="fixtures/app-store-screenshots/lpHUD_handlog_flow.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
 
         <div class="tabs" role="tablist" aria-label="Legal documents">
           <button
@@ -275,24 +404,24 @@
             hand logging, notes, and later review.
           </p>
           <p>
-            The App is intended as a personal study and record-keeping tool. It is not
-            a gambling platform, betting service, solver, real-time advice engine, or
-            financial product.
+            The App is intended as a personal study and record-keeping tool. It does not
+            let users play poker hands, exchange money, enter contests, or receive
+            real-time advice.
           </p>
 
           <h3>2. Eligibility and Responsible Use</h3>
           <p>
             You are responsible for using the App only where and how it is lawful and
-            permitted. You must comply with all applicable laws, venue rules,
-            tournament rules, platform rules, and game integrity requirements.
+            permitted. You must comply with all applicable laws, location rules,
+            event rules, platform rules, and game integrity requirements.
           </p>
           <p>You agree not to use the App:</p>
           <ul>
             <li>
               To cheat, collude, gain an unfair advantage, or violate rules of any
-              poker room, casino, tournament, online platform, or private game.
+              poker room, event, online platform, or private game.
             </li>
-            <li>To facilitate unlawful gambling or wagering.</li>
+            <li>To use the App for activity prohibited by law.</li>
             <li>To harass, defame, or unlawfully profile other people.</li>
             <li>To attempt to reverse engineer, interfere with, or misuse the App or its services.</li>
           </ul>
@@ -371,9 +500,8 @@
           <h3>8. No Professional Advice</h3>
           <p>
             The App provides tracking, notes, and statistics based on information you
-            enter. It does not provide legal, financial, gambling, professional poker,
-            or investment advice. You are solely responsible for your decisions and
-            conduct.
+            enter. It does not provide legal, financial, professional poker, or
+            investment advice. You are solely responsible for your decisions and conduct.
           </p>
 
           <h3>9. No Warranties</h3>
