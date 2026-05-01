@@ -150,6 +150,34 @@
         margin-bottom: 0;
       }
 
+      .feature-list {
+        display: grid;
+        gap: 9px;
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .feature-list li {
+        position: relative;
+        padding-left: 20px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.45;
+      }
+
+      .feature-list li::before {
+        content: "";
+        position: absolute;
+        top: 0.66em;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 18px rgba(74, 222, 128, 0.5);
+      }
+
       .video-frame {
         overflow: hidden;
         border: 1px solid var(--border);
@@ -274,6 +302,18 @@
               Live Poker HUD keeps player notes, sessions, and hand history local to
               your device while giving you a fast workflow for review after play.
             </p>
+            <ul class="feature-list" aria-label="Hand logging functionality">
+              <li>Button position advances automatically after each saved hand.</li>
+              <li><code>BTN -&gt;</code> can manually advance the button if a hand was missed.</li>
+              <li>Tapping any seat/player pill sets the button directly to that player.</li>
+              <li>Straddle mode can be toggled before preflop action starts, assigns <code>STR</code> to the seat after the big blind, and makes that player act last preflop.</li>
+              <li>All-in button marks the next non-fold action as all-in.</li>
+              <li>Showdown winner selection is required when the hand reaches showdown.</li>
+              <li>Board and player hole-card logging is optional.</li>
+              <li>Hand notes can be added during logging.</li>
+              <li>Save stores the hand locally and updates player HUD stats.</li>
+              <li>Player rows show quick stats: hands, VPIP, PFR, and 3Bet.</li>
+            </ul>
           </div>
           <div class="video-frame">
             <video
