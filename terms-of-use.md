@@ -97,7 +97,7 @@ https://www.apple.com/legal/macapps/stdeula/
 
 Your use of the App is also governed by our Privacy Policy:
 
-https://adriverin.github.io/livepokerhud-privacy/privacy-policy.html
+https://livepokerhud.com/#privacy
 
 ## 14. Changes to These Terms
 
