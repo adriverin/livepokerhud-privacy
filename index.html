@@ -229,6 +229,32 @@
         background: #060910;
       }
 
+      .site-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin: 0 0 30px;
+      }
+
+      .button-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        border: 1px solid rgba(74, 222, 128, 0.42);
+        border-radius: 12px;
+        padding: 10px 16px;
+        background: rgba(74, 222, 128, 0.12);
+        color: var(--text);
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button-link:hover {
+        background: rgba(74, 222, 128, 0.18);
+      }
+
       .tabs {
         display: flex;
         gap: 10px;
@@ -389,6 +415,10 @@
             </video>
           </div>
         </section>
+
+        <div class="site-actions" aria-label="Site navigation">
+          <a class="button-link" href="/preflopdrill/">Open Preflop Drill</a>
+        </div>
 
         <div class="tabs" role="tablist" aria-label="Legal documents">
           <button
